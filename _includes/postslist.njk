@@ -8,5 +8,6 @@
       <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
     {% endfor %}
   </li>
+  <p>{% if post.data.description %}{{ post.data.description }}{% else %}Default{% endif %}</p>
 {% endfor %}
 </ol>
